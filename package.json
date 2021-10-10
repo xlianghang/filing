@@ -1,6 +1,6 @@
 {
   "name": "filing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Compress or uncompress files in the browser and Node.",
   "main": "dist/cjs/index.js",
   "module": "dist/ems/index.js",
@@ -19,7 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:browser": "cd examples/browser && npm run dev",
     "dev:nodejs": "cd examples/nodejs && npm run dev",
-    "build": "node ./scripts/build_js_lib.js"
+    "build": "node ./scripts/build_js_lib.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -45,10 +46,7 @@
     "@types/node": "^16.10.2",
     "prettycli": "^1.4.3",
     "rollup": "^2.58.0",
-    "tsc": "^2.0.3",
-    "typescript": "^4.4.3"
-  },
-  "dependencies": {
+    "typescript": "^4.4.3",
     "rollup-plugin-terser": "^7.0.2"
   }
 }

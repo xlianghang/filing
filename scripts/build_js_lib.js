@@ -50,8 +50,8 @@ info('CSJ', 'Done!')
 
 loading('UMD', 'Building umd...')
 execSync('mkdir ./dist/umd')
-execSync('npx rollup --input dist/esm/browser/index.js --format umd --name filing --sourceMap --file dist/umd/filing.browser.js -p @rollup/plugin-node-resolve')
-execSync('npx rollup --input dist/esm/browser/index.js --format umd --name filing --file dist/umd/filing.browser.min.js -p @rollup/plugin-node-resolve -p rollup-plugin-terser && gzip ./dist/umd/filing.browser.min.js -c > ./dist/umd/filing.browser.min.js.gz')
+execSync('npx rollup --input dist/esm/browser/normal.js --format umd --name filing --sourceMap --file dist/umd/filing.browser.js -p @rollup/plugin-node-resolve')
+execSync('npx rollup --input dist/esm/browser/normal.js --format umd --name filing --file dist/umd/filing.browser.min.js -p @rollup/plugin-node-resolve -p rollup-plugin-terser && gzip ./dist/umd/filing.browser.min.js -c > ./dist/umd/filing.browser.min.js.gz')
 info('UMD', 'Done!')
 
 loading('Worker', 'Building web worker...')

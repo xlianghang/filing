@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="input" />
+    <script src="https://unpkg.com/filing@0.1.0/dist/umd/filing.browser.min.js"></script>
+    <script>
+        // const { FilingBrowserWorker } = filing
+        const { FilingBrowser } = filing
+        const filingWorker = new FilingBrowser({
+            wasmUrl: 'https://unpkg.com/filing@0.1.0/dist/esm/wasm/archive.wasm'
+        })
+        const input = document.getElementById('input')
+        input.onchange = (e) => {
+            const file = e.target.files[0]
+            filingWorker.extract(file).then((result) => {
+                console.log('result:', result);
+            })
+        }
+    </script>
+</body>
+</html>

@@ -310,11 +310,6 @@ terser@^5.0.0:
     source-map "~0.7.2"
     source-map-support "~0.5.20"
 
-tsc@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.nlark.com/tsc/download/tsc-2.0.3.tgz?cache=0&sync_timestamp=1620388913099&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftsc%2Fdownload%2Ftsc-2.0.3.tgz#037fe579e3bd67a5cbdaa604b43c6c1991b04bef"
-  integrity sha1-A3/leeO9Z6XL2qYEtDxsGZGwS+8=
-
 typescript@^4.4.3:
   version "4.4.3"
   resolved "https://registry.npmmirror.com/typescript/download/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
