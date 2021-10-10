@@ -1,0 +1,13 @@
+[
+    "_malloc",
+    "_free",
+    "_extract",
+    "_archive_entry_size",
+    "_get_next_entry",
+    "_archive_entry_pathname_utf8",
+    "_archive_read_data",
+    "_archive_read_data_skip",
+    "_archive_entry_filetype",
+    "_get_filedata"
+  ]
+  

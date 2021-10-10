@@ -1,0 +1,6 @@
+{
+  "extends": "../../common.tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "module": "commonjs"  }
+}

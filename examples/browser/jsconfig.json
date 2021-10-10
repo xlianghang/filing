@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "filing": ["../../src"]
+        }
+    },
+    "include": [
+        "./main.js"
+    ],
+    "exclude": [
+        
+    ]
+}
