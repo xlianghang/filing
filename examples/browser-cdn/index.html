@@ -8,12 +8,12 @@
 </head>
 <body>
     <input type="file" id="input" />
-    <script src="https://unpkg.com/filing@0.1.0/dist/umd/filing.browser.min.js"></script>
+    <script src="https://unpkg.com/filing/dist/umd/filing.browser.min.js"></script>
     <script>
         // const { FilingBrowserWorker } = filing
         const { FilingBrowser } = filing
         const filingWorker = new FilingBrowser({
-            wasmUrl: 'https://unpkg.com/filing@0.1.0/dist/esm/wasm/archive.wasm'
+            wasmUrl: 'https://unpkg.com/filing/dist/esm/wasm/archive.wasm'
         })
         const input = document.getElementById('input')
         input.onchange = (e) => {

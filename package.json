@@ -1,9 +1,9 @@
 {
   "name": "filing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Compress or uncompress files in the browser and Node.",
   "main": "dist/cjs/index.js",
-  "module": "dist/ems/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "browser": {
     "./dist/cjs/index.js": "./dist/cjs/browser/index.js",
